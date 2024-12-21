@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Navbar</title>
+    <style>
+        /* Reset and Body Styling */
+        body {
+            margin: 0;
+            font-family: 'Dancing Script', cursive, sans-serif; /* Festive and elegant font */
+            background-color: #f7f3e9; /* Cozy light background */
+            color: #333;
+        }
+
+        /* Christmas-Themed Sticky Navbar */
+        #main-header {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(90deg, #900C3F, #FF5733); /* Gradient red tones */
+            color: #FFF8DC; /* Festive creamy white */
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom: 4px solid #FFD700; /* Gold border */
+            text-align: center;
+        }
+
+        /* Navbar Container */
+        #main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the navbar */
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping for mobile */
+        }
+
+        /* Navbar Links */
+        #main-nav a {
+            text-decoration: none;
+            color: #FFF8DC;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 12px 18px;
+            margin: 5px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Hover Effect */
+        #main-nav a:hover {
+            background-color: #FFD700; /* Gold highlight */
+            color: #900C3F; /* Deep red text */
+            border-color: #FFF8DC; /* Cream border on hover */
+        }
+
+        /* Festive Icons for Navbar */
+        #main-nav a span {
+            margin-right: 8px; /* Spacing for icons */
+        }
+
+        /* Footer Styling */
+        #main-footer {
+            background-color: #900C3F;
+            color: #FFF8DC;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 4px solid #FFD700;
+            margin-top: 50px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #FFF8DC;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #900C3F;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #900C3F;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        /* Stylish Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Space between images */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stylish shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hover effects */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+#christmas-gif {
+            position: fixed;
+            top: 80%; /* Center vertically */
+            right: 0; /* Stick to the right edge */
+            transform: translateY(-50%); /* Adjust for centering */
+            width: 150px; /* Adjust width as needed */
+            height: auto;
+            z-index: 1000;
+        }
+
+        #christmas-gif2 {
+            position: fixed;
+            top: 30%; /* Center vertically */
+            right: 60; /* Stick to the right edge */
+            transform: translateY(-50%); /* Adjust for centering */
+            width: 150px; /* Adjust width as needed */
+            height: auto;
+            
+        }
+
+
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            #main-nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.6rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            p, li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#introduction"><span>🎅</span> Home  </a></li>
+                <li><a href="#science"><span>❄</span> About Us  </a></li>
+                <li><a href="#hemispheres"><span>🌟</span> Events </a></li>
+                <li><a href="#celebrations"><span>🎁</span> Activities </a></li>
+                <li><a href="#traditions"><span>🍪</span> Gallery </a></li>
+                <li><a href="#conclusion"><span>🎆</span> Contact </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img id="christmas-gif" src="https://i.pinimg.com/originals/14/e8/87/14e887db62e85130e337afd1d3f9a367.gif" alt="Merry Christmas">
+
+    <img id="christmas-gif2" src="https://www.happynewyeargifs.com/wp-content/uploads/2020/12/Merry-Christmas-Gif-04-wordsjustforyou-191220.gif" alt="Merry Christmas">
+
+
+
+    <section id="introduction">
+        <h2>Welcome to the Winter Wonderland Festival </h2>
+        <p>Step into a magical world of snowy landscapes, twinkling lights, and festive cheer. The Winter Wonderland Festival 2024 invites you to celebrate the season with dazzling decorations, exciting activities, and heartwarming traditions. Whether you're here to skate on the ice, enjoy live performances, or savor holiday treats, there's something for everyone.</p>
+
+        </section>
+
+    <section id="hemispheres">
+        <h2>Festival Highlights </h2>
+     <ul>
+        <li> Grand Opening Ceremony: Witness the lighting of the magnificent Christmas tree. </li>
+        <li> ce Skating Show: Enjoy a performance by professional skaters.</li>
+        <li> Caroling Nights: Sing along to your favorite holiday tunes with a live choir.</li>
+        <li> Fireworks Display: End the night with a spectacular fireworks show.</li>
+     </ul>
+    </section>
+
+    <section id="celebrations">
+        <h2>Fun for Everyone </h2>
+        
+        <li> Ice Skating Rink: Glide across the largest outdoor rink in the city.. </li>
+        <li> Santa's Workshop: Kids can meet Santa and create their own crafts .</li>
+        <li> Food and Beverage Stalls: Warm up with hot cocoa, mulled wine, and delicious holiday treats. </li>
+        <li> Snowball Arena: Engage in a friendly snowball fight with friends and family. </li>
+
+    </section>
+
+    <section id="traditions">
+        <h2> Festival Moments</h2>
+
+            <p>Capture the magic of the festival! Here are some of the best memories from past celebrations.</p>
+            <div class="gallery">
+                <img src="https://i.pinimg.com/originals/7c/30/08/7c3008cb3be2f23fc4616eba25e3fc57.jpg" alt="Lighting of the Christmas tree">
+                <img src="https://www.rofi.lk/blog/wp-content/uploads/2024/12/Christmas-in-Sri-Lanka-1000x600-1.jpg" alt="Ice skating show">
+                <img src="https://kimasurf.com/images/blog/437.webp" alt="Caroling night">
+                <img src="https://www.bluelankatours.com/wp-content/uploads/2017/12/Christmas_Decorations_in_Sri_Lanka.jpg" alt="Fireworks display">
+                <img src="https://www.sundaytimes.lk/221225/uploads/1-9Y1A6364.jpg" alt="Snowball arena">
+                <img src="https://www.mfa.gov.lk/wp-content/uploads/2019/01/Vienna-2018-12-312.jpg" alt="Santa's workshop">
+            </div>
+       
+        
+
+    </section>
+
+    <section id="conclusion">
+        <h2>Stay Connected</h2>
+        <ul>
+            <li> Location: Central Park, Downtown City </li>
+            <li> Dates: December 10, 2024 – January 5, 2025.</li>
+            <li>Email: info@winterwonderlandfestival.com</li>
+            <li>Phone: +1-555-123-4567</li>
+            
+        </ul>
+    </section>
+
+  
+
+    <footer id="main-footer">
+        <p>&copy;© 2024 Winter Wonderland Festival | Follow us on Facebook, Instagram, and Twitter. </p>
+       
+    </footer>
+
+</body>
+</html>
